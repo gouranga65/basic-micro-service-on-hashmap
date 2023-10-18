@@ -2,9 +2,11 @@ package com.example.microservice.demo.entity;
 
 import java.util.Date;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Vendor {
     private String code;
     private String companyName;
@@ -88,7 +90,7 @@ public class Vendor {
         this.regDate = regDate;
     }
 
-    public Vendor(String code, String companyName, String contactPerson, String firstName, String lastName) {
+    public Vendor() {
         this.code = "VEND";
         this.companyName = "sundarIT";
         this.contactPerson = "sundar9800";
@@ -98,10 +100,6 @@ public class Vendor {
         this.email = this.firstName + "." + this.lastName + "@" + this.companyName + ".com";
         this.status = 0;
         this.regDate = new Date();
-    }
-
-    public Vendor() {
-
     }
 
 }

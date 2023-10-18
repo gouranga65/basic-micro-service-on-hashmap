@@ -22,6 +22,8 @@ public class VendorService {
         vendors.put("2", ven2);
         vendors.put("3", ven3);
         ven1.setCode("1");
+        ven2.setCode("2");
+        ven3.setCode("3");
     }
 
     public VendorService() {
