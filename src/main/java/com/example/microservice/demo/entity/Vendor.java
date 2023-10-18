@@ -4,7 +4,6 @@ import java.util.Date;
 
 import org.springframework.stereotype.Component;
 
-
 @Component
 public class Vendor {
     private String code;
@@ -100,8 +99,9 @@ public class Vendor {
         this.status = 0;
         this.regDate = new Date();
     }
-     public Vendor(){
 
-     }
+    public Vendor() {
+
+    }
 
 }

@@ -21,13 +21,14 @@ public class VendorService {
         vendors.put("1", ven1);
         vendors.put("2", ven2);
         vendors.put("3", ven3);
+        ven1.setCode("1");
     }
 
     public VendorService() {
-        fillVendores();
     }
 
     public HashMap<String, Vendor> allVendor() {
+        fillVendores();
         return vendors;
     }
 
